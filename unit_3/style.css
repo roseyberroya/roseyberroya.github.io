@@ -1,0 +1,45 @@
+* {
+	font-family: Helvetica, sans-serif;
+	text-align: left;
+}
+
+h1{
+	letter-spacing: -8px;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+h2 {
+	letter-spacing: -4px;
+	font-size: 50px;
+	text-align: center;
+}
+
+h5 {
+	text-align: right;
+}
+
+body {
+	text-align: center;
+	background: url("legostarwarssnow.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: #000;
+	background-color: #959698;
+	padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+aside {
+	float: right;
+	margin-top: -180px;
+}
+
+#top_header{
+	text-align: center;
+}
