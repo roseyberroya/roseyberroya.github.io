@@ -7,40 +7,60 @@
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
-#top_header {
+nav {
+	position: fixed; /* stays on the same place on the page. set position: relative; in body */
+	z-index: 3; /* determines layer */
 	text-align: right;
-	padding-right: 60px;
+	right: 60px; /* 60px from right of browser */
+	top: 30%; 
+}
+nav a {
+	display: block; /* makes links verticle */
+	text-decoration: none; /* removes hyperlink underline */
+	margin: 10px; /* places space between links */
 }
 h4 {
 	text-align: left;
-	padding: 5px;
+	padding: 0;
 }
 h5 {
 	text-align: right;
 	padding-right: 10px;
 }
 body {
-	font-family: helvetica, sans-serif;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	color: #000;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(255, 255, 255, 0);
     padding-bottom: 50px;
 }
 p {
+	font-size: 14px;
+	font-weight: bold;
 	text-align: left;
-    padding-right: 150px;
-    padding-left: 150px;
-    padding-top: 16px;
-    padding-bottom: 0px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 ul {
 	text-align: left;
-    padding-right: 150px;
-    padding-left: 170px;
 }
-aside {
-	float: right;
-	margin-top: -180px;
+.thumbnail {
+    width: 200px;/*
+    height: 200px;*/
+    display: block; /* inline-block, block, or you could float them */
+    overflow: hidden;
+}
+.thumbnail img {
+    width: 100%;
+}
+
+.job{
+	height: 250px;
+  width: 80%;
+	margin: 10px;
 }
 
 /* ============================================================
@@ -60,14 +80,13 @@ section.module h2 {
   letter-spacing: -4px;
   font-size: 50px;
   font-family: "Helvetica", serif;
-  font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 section.module p {
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 section.module p:last-child {
@@ -84,6 +103,7 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax h1 {
+  font-family: 'Helvetica', serif;
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: -8px;
   line-height: 100px;
@@ -94,6 +114,7 @@ section.module.parallax h1 {
 }
 section.module.parallax-top {
   background-image: url("cover.jpg");
+  height: 700px;
 }
 section.module.parallax-1 {
   background-image: url("work.jpg");
@@ -110,7 +131,7 @@ section.module.parallax-3 {
     font-size: 42px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 16px;
   }
   section.module.parallax h1 {
     font-size: 60px;
