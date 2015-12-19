@@ -1,0 +1,145 @@
+*,*:before,*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+nav {
+	position: fixed; /* stays on the same place on the page. set position: relative; in body */
+	z-index: 3; /* determines layer */
+	text-align: right;
+	right: 60px; /* 60px from right of browser */
+	top: 30%; 
+}
+nav a {
+	display: block; /* makes links verticle */
+	text-decoration: none; /* removes hyperlink underline */
+	margin: 10px; /* places space between links */
+}
+h4 {
+	text-align: left;
+	padding: 0;
+}
+h5 {
+	text-align: right;
+	padding-right: 10px;
+}
+body {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0);
+    padding-bottom: 50px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: left;
+	font-weight: bold;
+  margin: 2em;
+}
+ul {
+	text-align: left;
+}
+.thumbnail {
+    width: 200px;
+    display: block; /* inline-block, block, or you could float them */
+    overflow: hidden;
+}
+.thumbnail img {
+    width: 100%;
+}
+
+.job{
+	height: 250px;
+  padding: 10px;
+  width: 20%;
+  display: inline-table;
+}
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  letter-spacing: -4px;
+  font-size: 50px;
+  font-family: "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+section.module h3 {
+  margin: 4em;
+}
+section.module p {
+  margin-bottom: 2em;
+  font-size: 18px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 20px 0;
+}
+section.module.parallax {
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  font-family: 'Helvetica', serif;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: -8px;
+  line-height: 100px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 200px;
+  text-shadow: 0 0 10 px rgba(0, 0, 0, 0.8);
+}
+section.module.parallax-top {
+  background-image: url("cover.jpg");
+  height: 700px;
+}
+section.module.parallax-1 {
+  background-image: url("work.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("play.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("chicago.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 18px;
+  }
+  section.module.parallax h1 {
+    font-size: 60px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+  }
+}
